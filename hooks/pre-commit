@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e
+
+npm i --package-lock-only
+npm run format
+npm run lint
+npm run spell
+npm run svc
+git add .
