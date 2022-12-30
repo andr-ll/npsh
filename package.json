@@ -9,7 +9,7 @@
   },
   "files": [
     "svc.js",
-    "hooks.js",
+    "hooks",
     "build_lib.js"
   ],
   "repository": {
