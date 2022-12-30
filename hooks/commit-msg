@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+
+const conv = [
+  'feat',
+  'fix',
+  'chore',
+  'refactor',
+  'perf',
+  'revert',
+  'style'
+];
+
+const message = fs.readFileSync(process.argv[2], 'utf8');
+const isValid = conv.includes(message.split(':')[0]);
+
+if(!isValid) {
+   console.log('Commit message is not valid.');
+   process.exit(1);
+}
