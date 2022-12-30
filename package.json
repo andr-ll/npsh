@@ -1,19 +1,11 @@
 {
   "name": "@andr-ll/nph",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node.js package helper",
   "bin": {
     "nph.svc": "./svc.js",
     "nph.hooks": "./hooks/bin.js",
     "nph.bin": "./build_bin.js"
-  },
-  "scripts": {
-    "postinstall": "./hooks/bin.js",
-    "svc": "./svc.js andr-ll nph master",
-    "format": "echo Format is off",
-    "lint": "echo Lint is off",
-    "types": "echo TS is off",
-    "spell": "echo Spell is off"
   },
   "files": [
     "svc.js",
