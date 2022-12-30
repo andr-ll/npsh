@@ -5,6 +5,7 @@ set -e
 npm i --package-lock-only
 npm run format
 npm run lint
+npm run types
 npm run spell
 npm run svc
 git add .

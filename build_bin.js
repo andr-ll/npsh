@@ -3,16 +3,16 @@
 const fs = require('fs');
 
 const methodName = process.argv[2];
-const libPath = './lib';
+const binPath = './bin';
 const mode = 0777;
 
 const content = `#!/usr/bin/env node
 
 require('../lib')${methodName == null ? '' : `.${methodName}`};`;
 
-if (fs.existsSync(libPath)) {
-  fs.rmSync(libPath, { recursive: true, force: true });
+if (fs.existsSync(binPath)) {
+  fs.rmSync(binPath, { recursive: true, force: true });
 }
 
-fs.mkdirSync(libPath);
-fs.writeFileSync(`${libPath}/index.js`, content, { mode });
+fs.mkdirSync(binPath);
+fs.writeFileSync(`${binPath}/index.js`, content, { mode });
