@@ -1,0 +1,25 @@
+{
+  "name": "@andr-ll/nph",
+  "version": "1.0.1",
+  "description": "Node.js package helper",
+  "bin": {
+    "nph.svc": "./svc.js",
+    "nph.hooks": "./hooks.js",
+    "nph.bl": "./build_lib.js"
+  },
+  "files": [
+    "svc.js",
+    "hooks.js",
+    "build_lib.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:andr-ll/nph.git"
+  },
+  "keywords": ["nodejs", "package helper", "javascript"],
+  "author": "andr_ll",
+  "license": "ISC",
+  "publishConfig": {
+    "@andr-ll:registry": "https://npm.pkg.github.com"
+  }
+}
