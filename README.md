@@ -18,7 +18,7 @@ npm i @andr-ll/nph
 
 ## Usage
 
-### Semantic cersion check
+### Semantic version check
 
 To check semantic version add new script to the
 `scripts` of your project's `package.json` file.
