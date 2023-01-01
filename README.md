@@ -1,5 +1,7 @@
 # @andr-ll/nph
 
+[![NPM version](https://img.shields.io/npm/v/@andr-ll/nph.svg)](https://www.npmjs.com/package/@andr-ll/nph)
+
 Node.js package helper
 
 ## Installation
