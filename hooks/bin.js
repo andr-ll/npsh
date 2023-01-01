@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
+/**
+ * @description A helper for creating commit hooks.
+ * @author Andrii Lytovchenko <andr.lyt.dev@gmail.com>
+ * @licence MIT
+ */
+
 const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');

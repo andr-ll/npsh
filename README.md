@@ -4,14 +4,6 @@ Node.js package helper
 
 ## Installation
 
-Make sure you have added registry configuration to `~/.npmrc` file before installation.
-
-```bash
-echo '@andr-ll:registry=https://npm.pkg.github.com' >> ~/.npmrc
-```
-
-Then install the package:
-
 ```bash
 npm i @andr-ll/nph
 ```

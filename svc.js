@@ -1,5 +1,13 @@
 #!/usr/bin/env node
 
+/**
+ * @description Semantic version checker. Verifies if 
+ * the branch/PR version in package.json is updated
+ * against the last version of desired branch.
+ * @author Andrii Lytovchenko <andr.lyt.dev@gmail.com>
+ * @licence MIT
+ */
+
 const https = require('https');
 const fs = require('fs');
 
