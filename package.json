@@ -1,6 +1,6 @@
 {
   "name": "@andr-ll/nph",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.js package helper",
   "bin": {
     "nph.svc": "./svc.js",
@@ -17,9 +17,6 @@
     "url": "git@github.com:andr-ll/nph.git"
   },
   "keywords": ["nodejs", "package helper", "javascript"],
-  "author": "andr_ll",
-  "license": "ISC",
-  "publishConfig": {
-    "@andr-ll:registry": "https://npm.pkg.github.com"
-  }
+  "author": "Andrii Lytovchenko <andr.lyt.dev@gmail.com>",
+  "license": "MIT"
 }
