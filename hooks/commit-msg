@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
+/**
+ * @description Commit message checker.
+ * @author Andrii Lytovchenko <andr.lyt.dev@gmail.com>
+ * @licence MIT
+ */
+
 const fs = require('fs');
 
 const conv = [
@@ -9,7 +15,8 @@ const conv = [
   'refactor',
   'perf',
   'revert',
-  'style'
+  'style',
+  'release'
 ];
 
 const message = fs.readFileSync(process.argv[2], 'utf8');
