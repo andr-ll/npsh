@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
+/**
+ * @description The bin builder for node.js cli packages.
+ * @author Andrii Lytovchenko <andr.lyt.dev@gmail.com>
+ * @licence MIT
+ */
+
 const fs = require('fs');
 
 const methodName = process.argv[2];
