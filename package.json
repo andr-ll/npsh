@@ -1,11 +1,11 @@
 {
-  "name": "@andr-ll/nph",
-  "version": "1.0.4",
-  "description": "Node.js package helper",
+  "name": "npsh",
+  "version": "1.0.5",
+  "description": "Node.js package scripts helper",
   "bin": {
-    "nph.svc": "./svc.js",
-    "nph.hooks": "./hooks/bin.js",
-    "nph.bin": "./build_bin.js"
+    "npsh.svc": "./svc.js",
+    "npsh.hooks": "./hooks/bin.js",
+    "npsh.bin": "./build_bin.js"
   },
   "files": [
     "svc.js",
@@ -14,9 +14,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:andr-ll/nph.git"
+    "url": "git@github.com:andr-ii/nph.git"
   },
-  "keywords": ["nodejs", "package helper", "javascript"],
+  "keywords": [
+    "nodejs",
+    "package helper",
+    "javascript",
+    "ci",
+    "scripts"
+  ],
   "author": "Andrii Lytovchenko <andr.lyt.dev@gmail.com>",
   "license": "MIT"
 }
