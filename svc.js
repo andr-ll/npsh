@@ -5,7 +5,7 @@
  * the branch/PR version in package.json is updated
  * against the last version of desired branch.
  * @author Andrii Lytovchenko <andr.lyt.dev@gmail.com>
- * @licence MIT
+ * @license MIT
  */
 
 const https = require('https');
