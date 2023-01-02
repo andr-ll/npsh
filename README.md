@@ -2,12 +2,12 @@
 
 [![NPM version][npm-img]][npm-url]
 
-Node.js package helper
+Node.js package scripts helper
 
 ## Installation
 
 ```bash
-npm i npsh
+npm install npsh
 ```
 
 ## Usage
