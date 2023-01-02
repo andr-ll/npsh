@@ -2,7 +2,7 @@
 
 # description: pre-commit hook
 # author Andrii Lytovchenko <andr.lyt.dev@gmail.com>
-# licence: MIT
+# license: MIT
 
 set -e
 
