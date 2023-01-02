@@ -3,7 +3,7 @@
 /**
  * @description The bin builder for node.js cli packages.
  * @author Andrii Lytovchenko <andr.lyt.dev@gmail.com>
- * @licence MIT
+ * @license MIT
  */
 
 const fs = require('fs');
