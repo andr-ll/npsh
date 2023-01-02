@@ -3,7 +3,7 @@
 /**
  * @description Commit message checker.
  * @author Andrii Lytovchenko <andr.lyt.dev@gmail.com>
- * @licence MIT
+ * @license MIT
  */
 
 const fs = require('fs');
