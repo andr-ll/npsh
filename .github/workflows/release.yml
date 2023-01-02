@@ -1,4 +1,4 @@
-name: Publish @andr-ll/nph package to npmjs
+name: Publish npsh package to npmjs
 
 on:
   release:
