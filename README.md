@@ -2,7 +2,11 @@
 
 [![NPM version][npm-img]][npm-url]
 
-Node.js package scripts helper
+Node.js package scripts helper.
+
+Inscludes commonly used scripts for CI, so
+they can be added from one `npm` package instead of
+being copied among different repos.
 
 ## Installation
 
