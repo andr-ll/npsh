@@ -3,7 +3,7 @@
 /**
  * @description A helper for creating commit hooks.
  * @author Andrii Lytovchenko <andr.lyt.dev@gmail.com>
- * @licence MIT
+ * @license MIT
  */
 
 const fs = require('fs');
