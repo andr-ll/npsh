@@ -4,7 +4,7 @@
 
 Node.js package scripts helper.
 
-Inscludes commonly used scripts for CI, so
+Includes commonly used scripts for CI, so
 they can be added from one `npm` package instead of
 being copied among different repos.
 
