@@ -1,16 +1,15 @@
 {
   "name": "npsh",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Node.js package scripts helper",
   "bin": {
-    "npsh.svc": "./svc.js",
-    "npsh.hooks": "./hooks/bin.js",
-    "npsh.bin": "./build_bin.js"
+    "npsh.svc": "./bin.js svc",
+    "npsh.hooks": "./bin.js hooks",
+    "npsh.bin": "./bin.js bin"
   },
   "files": [
-    "svc.js",
-    "hooks",
-    "build_lib.js"
+    "bin.js",
+    "lib"
   ],
   "repository": {
     "type": "git",
