@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Collect coverage
-        run: npm run coverage
+        run: npm run test
       - name: Coveralls
         uses: coverallsapp/github-action@master
     timeout-minutes: 5
