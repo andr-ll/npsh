@@ -4,22 +4,11 @@
  */
 
 module.exports = {
-  // Automatically clear mock calls, instances, contexts and results before every test
   clearMocks: true,
   forceExit: true,
-
-  // The directory where Jest should output its coverage files
-  // coverageDirectory: undefined,
-
-  // An array of regexp pattern strings used to skip coverage collection
   coveragePathIgnorePatterns: ['/node_modules/', '/.github/'],
-
-  // Indicates which provider should be used to instrument code for coverage
   coverageProvider: 'v8',
-
-  // A list of reporter names that Jest uses when writing coverage reports
-  coverageReporters: ['json', 'text', 'lcov', 'clover'],
-
+  coverageReporters: ['lcov'],
   coverageThreshold: {
     global: {
       branches: 99,
@@ -28,7 +17,6 @@ module.exports = {
       statements: 99,
     },
   },
-
   collectCoverageFrom: ['./lib/**'],
 
   // An enum that specifies notification mode. Requires { notify: true }
