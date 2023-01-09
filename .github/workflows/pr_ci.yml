@@ -1,0 +1,33 @@
+name: Pull Request CI
+
+on:
+  pull_request:
+    branches: ['master']
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare actions
+        uses: actions/checkout@v3
+      - name: Setup node env
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+          registry-url: 'https://npm.pkg.github.com'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install dependencies
+        run: npm install
+      - name: Format check
+        run: npm run format:check
+      - name: Spell check
+        run: npm run spell
+      - name: Semantic version check
+        run: npm run svc
+    timeout-minutes: 5

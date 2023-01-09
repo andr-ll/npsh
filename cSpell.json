@@ -1,0 +1,22 @@
+{
+  "dictionaries": [],
+  "flagWords": [],
+  "ignorePaths": [
+    ".eslintrc",
+    ".eslintignore",
+    ".gitignore",
+    ".prettierignore",
+    "*.config.js",
+    "*.json",
+    "*.log",
+    "*.yaml",
+    ".vscode",
+    "coverage/",
+    "lib/",
+    "node_modules/",
+    "scripts/"
+  ],
+  "language": "en-US",
+  "version": "0.2",
+  "words": ["andr", "andrii", "lytovchenko", "npsh", "nuti"]
+}
