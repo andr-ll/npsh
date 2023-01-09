@@ -1,6 +1,6 @@
 {
   "name": "npsh",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "Node.js package scripts helper",
   "bin": {
     "npsh.svc": "./lib/index.js svc",
@@ -14,7 +14,9 @@
     "format": "prettier --write '**/*.{js,json,md,yml,yaml}'",
     "format:check": "prettier -l '**/*.{js,json,md,yml,yaml}'",
     "spell": "cspell '**/*'",
-    "svc": "./lib/index.js svc andr-ii npsh master"
+    "svc": "./lib/index.js svc andr-ii npsh master",
+    "test": "jest --coverage",
+    "coverage": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,10 @@
   "author": "Andrii Lytovchenko <andr.lyt.dev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^29.2.5",
+    "coveralls": "^3.1.1",
     "cspell": "^6.18.1",
+    "jest": "^29.3.1",
     "prettier": "^2.8.2"
   }
 }

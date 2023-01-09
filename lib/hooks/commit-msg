@@ -8,7 +8,7 @@
 
 const fs = require('fs');
 
-const conv = [
+const headers = [
   'feat',
   'fix',
   'chore',
@@ -20,7 +20,7 @@ const conv = [
 ];
 
 const message = fs.readFileSync(process.argv[2], 'utf8');
-const isValid = conv.includes(message.split(':')[0]);
+const isValid = headers.includes(message.split(':')[0]);
 
 if(!isValid) {
    console.log('Commit message is not valid.');

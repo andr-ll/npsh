@@ -1,4 +1,4 @@
-name: Publish npsh package to npmjs
+name: publish npsh package to npmjs
 
 on:
   release:
