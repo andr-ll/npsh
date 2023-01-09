@@ -1,17 +1,21 @@
 {
   "name": "npsh",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Node.js package scripts helper",
   "bin": {
-    "npsh.svc": "./svc.js",
-    "npsh.hooks": "./hooks/bin.js",
-    "npsh.bin": "./build_bin.js"
+    "npsh.svc": "./lib/index.js svc",
+    "npsh.hooks": "./lib/index.js hooks",
+    "npsh.bin": "./lib/index.js bin"
   },
   "files": [
-    "svc.js",
-    "hooks",
-    "build_lib.js"
+    "lib"
   ],
+  "scripts": {
+    "format": "prettier --write '**/*.{js,json,md,yml,yaml}'",
+    "format:check": "prettier -l '**/*.{js,json,md,yml,yaml}'",
+    "spell": "cspell '**/*'",
+    "svc": "./lib/index.js svc andr-ii npsh master"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:andr-ii/npsh.git"
@@ -24,5 +28,9 @@
     "scripts"
   ],
   "author": "Andrii Lytovchenko <andr.lyt.dev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cspell": "^6.18.1",
+    "prettier": "^2.8.2"
+  }
 }

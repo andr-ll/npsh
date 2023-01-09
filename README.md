@@ -4,7 +4,7 @@
 
 Node.js package scripts helper.
 
-Inscludes commonly used scripts for CI, so
+Includes commonly used scripts for CI, so
 they can be added from one `npm` package instead of
 being copied among different repos.
 
@@ -30,7 +30,7 @@ Here is an example with placeholders:
 And a real example which will be checking PR/branch version against master branch:
 
 ```json
-"svc": "npsh.svc andr-ii nuti master" 
+"svc": "npsh.svc andr-ii nuti master"
 ```
 
 ### Commit hooks
@@ -89,7 +89,7 @@ If your `lib` module exports a function - it can be executed after
 "build:bin": "npsh.bin 'myFunc()'"
 ```
 
-After execurion `./bin/index.js` will have following content:
+After execution `./bin/index.js` will have following content:
 
 ```js
 #!/urs/bin/env node
