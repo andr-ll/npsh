@@ -1,6 +1,6 @@
 {
   "name": "npsh",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Node.js package scripts helper",
   "bin": {
     "npsh.svc": "./lib/index.js svc",

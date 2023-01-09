@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 16
           cache: 'npm'
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.COVERALLS_TOKEN }}
       - name: Install dependencies
         run: npm install
       - name: Collect coverage
