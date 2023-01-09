@@ -1,7 +1,7 @@
-name: pull request ci
+name: upload coverage
 
 on:
-  pull_request:
+  push:
     branches: ['master']
 
 defaults:
@@ -21,12 +21,10 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
-      - name: Format check
-        run: npm run format:check
-      - name: Spell check
-        run: npm run spell
-      - name: Semantic version check
-        run: npm run svc
-      - name: Tests
-        run: npm run test
+      - name: Collect coverage
+        run: npm run coverage
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
     timeout-minutes: 5
