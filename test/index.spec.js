@@ -21,6 +21,9 @@ describe('success', () => {
     process.argv[4] = 'npsh';
     process.argv[5] = 'master';
 
+    jest.spyOn(console, 'log').mockImplementation(() => {});
+    jest.spyOn(console, 'error').mockImplementation(() => {});
+
     require('../lib');
   });
 });
