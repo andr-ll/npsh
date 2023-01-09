@@ -19,11 +19,12 @@ jobs:
         with:
           node-version: 16
           cache: 'npm'
-          github-token: ${{ secrets.COVERALLS_TOKEN }}
       - name: Install dependencies
         run: npm install
       - name: Collect coverage
         run: npm run test
       - name: Coveralls
         uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
     timeout-minutes: 5
