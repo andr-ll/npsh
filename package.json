@@ -1,11 +1,9 @@
 {
   "name": "npsh",
-  "version": "1.1.3",
+  "version": "2.0.0",
   "description": "Node.js package scripts helper",
   "bin": {
-    "npsh.svc": "./lib/index.js svc",
-    "npsh.hooks": "./lib/index.js hooks",
-    "npsh.bin": "./lib/index.js bin"
+    "npsh": "./lib/index.js"
   },
   "files": [
     "lib"

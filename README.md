@@ -25,13 +25,13 @@ create a `"svc"` script at the `package.json` file.
 Here is an example with placeholders:
 
 ```json
-"svc": "npsh.svc github_user_name project_name branch_name"
+"svc": "npsh svc github_user_name project_name branch_name"
 ```
 
 And a real example which will be checking PR/branch version against master branch:
 
 ```json
-"svc": "npsh.svc andr-ii nuti master"
+"svc": "npsh svc andr-ii nuti master"
 ```
 
 ### Commit hooks
@@ -40,7 +40,7 @@ For adding `pre-commit` and `commit-msg` hooks to your project
 create a `"hooks"` script at the `package.json` file.
 
 ```json
-"hooks": "npsh.hooks"
+"hooks": "npsh hooks"
 ```
 
 Then simply run following command to add commit hooks:
@@ -63,15 +63,16 @@ So make sure these scripts are present at the `package.json`.
 
 ### `bin` builder
 
+b
 If your project has an executable `./bin/index.js` file and you
 would like to avoid to have it in the development (TypeScript for example)
-project - `npsh.bin` can be used. It generates `./bin/index.js` executable file
+project - `npsh bin` can be used. It generates `./bin/index.js` executable file
 which requires your `lib` module by default.
 
 Create a `"build:bin"` script at the `package.json` file.
 
 ```json
-"build:bin": "npsh.bin"
+"build:bin": "npsh bin"
 ```
 
 After execution this script will create a default `./bin/index.js` file
@@ -87,7 +88,7 @@ If your `lib` module exports a function - it can be executed after
 `require('../lib')`. Change `"build:bin"` script as following:
 
 ```json
-"build:bin": "npsh.bin 'myFunc()'"
+"build:bin": "npsh bin 'myFunc()'"
 ```
 
 After execution `./bin/index.js` will have following content:
