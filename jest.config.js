@@ -3,7 +3,7 @@ module.exports = {
   forceExit: true,
   coveragePathIgnorePatterns: ['/node_modules/', '/.github/'],
   coverageProvider: 'v8',
-  coverageReporters: ['lcov'],
+  coverageReporters: ['text', 'lcov'],
   coverageThreshold: {
     global: {
       branches: 99,

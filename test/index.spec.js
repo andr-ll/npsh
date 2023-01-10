@@ -1,4 +1,5 @@
-const consoleSpy = jest.spyOn(console, 'log');
+jest.spyOn(console, 'log').mockImplementation(() => {});
+jest.spyOn(process, 'exit').mockImplementation(() => {});
 
 describe('error handling', () => {
   it('throw an error if not valid argument', () => {
@@ -12,6 +13,12 @@ describe('error handling', () => {
       expect(error.message).toStrictEqual('Unsupported argument: foo-bar');
     }
   });
+
+  it('throw an error if script fails', () => {
+    process.argv[2] = 'svc';
+
+    require('../lib');
+  });
 });
 
 describe('success', () => {
@@ -20,9 +27,6 @@ describe('success', () => {
     process.argv[3] = 'andr-ii';
     process.argv[4] = 'npsh';
     process.argv[5] = 'master';
-
-    jest.spyOn(console, 'log').mockImplementation(() => {});
-    jest.spyOn(console, 'error').mockImplementation(() => {});
 
     require('../lib');
   });
