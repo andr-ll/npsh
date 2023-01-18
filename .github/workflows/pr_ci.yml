@@ -26,6 +26,7 @@ jobs:
       - name: Spell check
         run: npm run spell
       - name: Semantic version check
+        if: github.event.pull_request.user.login != 'dependabot[bot]'
         run: npm run svc
       - name: Tests
         run: npm run test
