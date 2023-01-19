@@ -4,4 +4,6 @@ updates:
     directory: '/'
     schedule:
       interval: 'daily'
+      time: '12:00'
+      timezone: 'Europe/Belgrade'
     versioning-strategy: increase
