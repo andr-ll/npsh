@@ -3,7 +3,8 @@ updates:
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-      interval: 'daily'
-      time: '12:00'
+      interval: 'weekly'
+      day: 'thursday'
+      time: '11:00'
       timezone: 'Europe/Belgrade'
     versioning-strategy: increase
