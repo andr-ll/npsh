@@ -99,7 +99,7 @@ After execution `./bin/index.js` will have following content:
 require('../lib').myFunc();
 ```
 
-[npm-img]: https://img.shields.io/npm/v/npsh.svg
+[npm-img]: https://img.shields.io/npm/v/npsh.svg?logo=npm
 [npm-url]: https://www.npmjs.com/package/npsh
 [coverage-img]: https://coveralls.io/repos/github/andr-ii/npsh/badge.svg?branch=master
 [coverage-url]: https://coveralls.io/github/andr-ii/npsh?branch=master
