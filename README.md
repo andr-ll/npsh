@@ -1,7 +1,8 @@
 # npsh
 
-[![NPM version][npm-img]][npm-url]
-[![Coverage Status][coverage-img]][coverage-url]
+[![NPM][npm-img]][npm-url]
+[![Coverage][coverage-img]][coverage-url]
+[![License][license-pic]][license-url]
 
 Node.js package scripts helper.
 
@@ -103,3 +104,5 @@ require('../lib').myFunc();
 [npm-url]: https://www.npmjs.com/package/npsh
 [coverage-img]: https://img.shields.io/coverallsCoverage/github/andr-ii/npsh?label=coverage&logo=jest
 [coverage-url]: https://coveralls.io/github/andr-ii/npsh?branch=master
+[license-pic]: https://img.shields.io/github/license/andr-ii/npsh?color=blue&label=%C2%A9%20license
+[license-url]: https://github.com/andr-ii/npsh/blob/master/LICENSE
