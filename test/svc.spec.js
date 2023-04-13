@@ -33,7 +33,7 @@ describe('error handling', () => {
 
       await svc();
     } catch (error) {
-      expect(error.message).toStrictEqual('Not enough arguments.');
+      expect(error).toStrictEqual('svc failed: not enough arguments.');
     }
   });
 
@@ -82,7 +82,7 @@ describe('error handling', () => {
       await svc();
     } catch (error) {
       expect(error).toStrictEqual(
-        `The patch version must not be less than ${patch}.`,
+        `Patch version should be equal to ${+patch + 1}.`,
       );
     }
   });
@@ -112,13 +112,13 @@ describe('error handling', () => {
     const [major, minor, patch] = version.split('.');
     try {
       fsSpy.mockImplementationOnce(() => {
-        return `{"version":"${[major, minor, patch + 3].join('.')}"}`;
+        return `{"version":"${[major, minor + 3, patch].join('.')}"}`;
       });
 
       await svc();
     } catch (error) {
       expect(error).toStrictEqual(
-        `The patch version must be equal to ${Number(patch) + 1}.`,
+        `Minor version should be equal to ${minor} or ${+minor + 1}.`,
       );
     }
   });
@@ -139,8 +139,24 @@ describe('error handling', () => {
 
       await svc();
     } catch (error) {
+      expect(error).toStrictEqual(`Patch version should be equal to 0.`);
+    }
+  });
+
+  it('throws an error if major semantic version is not valid', async () => {
+    expect.assertions(1);
+
+    const version = await getVersion;
+    const [major, minor, patch] = version.split('.');
+    try {
+      fsSpy.mockImplementationOnce(() => {
+        return `{"version":"${[major + 2, minor, patch].join('.')}"}`;
+      });
+
+      await svc();
+    } catch (error) {
       expect(error).toStrictEqual(
-        `The patch version should be equal to 0 after updating minor version.`,
+        `Major version should be equal to ${major} or ${+major + 1}.`,
       );
     }
   });
