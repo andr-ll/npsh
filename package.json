@@ -32,7 +32,7 @@
     "@types/jest": "^29.5.1",
     "cspell": "^6.31.1",
     "jest": "^29.5.0",
-    "prettier": "^2.8.7"
+    "prettier": "^2.8.8"
   },
   "dependencies": {
     "nuti": "^2.1.1"
