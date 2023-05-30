@@ -1,6 +1,6 @@
 {
   "name": "npsh",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Node.js package scripts helper",
   "bin": {
     "npsh": "./lib/index.js"
@@ -35,6 +35,7 @@
     "prettier": "^2.8.8"
   },
   "dependencies": {
-    "nuti": "^2.1.1"
+    "nuti": "^2.1.1",
+    "vator": "^1.0.0"
   }
 }
