@@ -3,6 +3,7 @@
 [![NPM][npm-img]][npm-url]
 [![Coverage][coverage-img]][coverage-url]
 [![License][license-pic]][license-url]
+[![Downloads][npm-downloads]][npm-url]
 
 Node.js package scripts helper.
 
@@ -102,6 +103,7 @@ require('../lib').myFunc();
 
 [npm-img]: https://img.shields.io/npm/v/npsh.svg?logo=npm
 [npm-url]: https://www.npmjs.com/package/npsh
+[npm-downloads]: https://img.shields.io/npm/dt/npsh?logo=Hack%20The%20Box&logoColor=green&label=downloads
 [coverage-img]: https://img.shields.io/coverallsCoverage/github/andr-ii/npsh?label=coverage&logo=jest
 [coverage-url]: https://coveralls.io/github/andr-ii/npsh?branch=master
 [license-pic]: https://img.shields.io/github/license/andr-ii/npsh?color=blue&label=%C2%A9%20license
