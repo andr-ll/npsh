@@ -36,6 +36,6 @@
   },
   "dependencies": {
     "reqex": "^1.0.1",
-    "vator": "^1.1.4"
+    "vator": "^1.2.0"
   }
 }
