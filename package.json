@@ -12,12 +12,12 @@
     "format": "prettier --write '**/*.{js,json,md,yml,yaml}'",
     "format:check": "prettier -l '**/*.{js,json,md,yml,yaml}'",
     "spell": "cspell '**/*'",
-    "svc": "./lib/index.js svc andr-ii npsh master",
+    "svc": "./lib/index.js svc andr-ll npsh master",
     "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:andr-ii/npsh.git"
+    "url": "git@github.com:andr-ll/npsh.git"
   },
   "keywords": [
     "nodejs",
